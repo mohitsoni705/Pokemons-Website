@@ -80,3 +80,7 @@
         font-size: 1.2rem;
     }
 }
+.no-result{
+    color: white;
+    text-align: center;
+}

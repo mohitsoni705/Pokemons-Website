@@ -50,11 +50,13 @@ const Pokemons = () => {
         </div>
         <div className="pokemon-data">
         <ul className='pokemons-list'>
-        {searchData.map((curElem)=>{
+        {searchData.length>0?searchData.map((curElem)=>{
             return(
                 <PokemonCard key={curElem.id} pokemonData={curElem}/>
             )  
-        })}
+        }):(
+            <h1 className='no-result'>No Result Found! Please Try Again Later</h1>
+        )}
         </ul>
         </div>
     </div>
